@@ -1,16 +1,16 @@
-package implementation;
+package com.mycompany.app.implementation;
 
-import airport.Airport;
-import airport.City;
-import airport.Flight;
-import exception.AirportException;
-import exception.FlightException;
-import interfaces.IFlightDAO;
 //import org.apache.logging.log4j.LogManager;
 //import org.apache.logging.log4j.Logger;
-import utils.Model;
 
 import java.util.List;
+
+import com.mycompany.app.airport.Airport;
+import com.mycompany.app.airport.City;
+import com.mycompany.app.airport.Flight;
+import com.mycompany.app.exception.FlightException;
+import com.mycompany.app.interfaces.IFlightDAO;
+import com.mycompany.app.utils.Model;
 
 public class FlightDAO implements IFlightDAO {
     //private static final Logger logger = LogManager.getLogger("Airport");
@@ -32,7 +32,7 @@ public class FlightDAO implements IFlightDAO {
     }
 
     @Override
-    public List<List<Flight>> getRoute(City leaving, City goingTo) throws FlightException {
+    public List<List<Flight>> getRoute(City leaving, City goingTo) throws FlightException{
         Airport airport = model.getAirport();
         if(airport == null){
             //logger.error("There is No Airport Available");

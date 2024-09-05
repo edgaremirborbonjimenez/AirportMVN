@@ -1,9 +1,11 @@
-package airport;
+package com.mycompany.app.airport;
 
-import people.Passenger;
-import utils.TypeSeat;
+
 
 import java.util.Objects;
+
+import com.mycompany.app.people.Passenger;
+import com.mycompany.app.utils.TypeSeat;
 
 public class Seat {
     private Passenger passenger;

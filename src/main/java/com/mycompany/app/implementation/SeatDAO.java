@@ -1,15 +1,16 @@
-package implementation;
+package com.mycompany.app.implementation;
 
-import airport.Flight;
-import airport.Seat;
-import exception.FlightException;
-import interfaces.ISeatDAO;
 //import org.apache.logging.log4j.LogManager;
 //import org.apache.logging.log4j.Logger;
-import utils.Model;
-import utils.customLinkedList.Node;
 
 import java.util.List;
+
+import com.mycompany.app.airport.Flight;
+import com.mycompany.app.airport.Seat;
+import com.mycompany.app.exception.FlightException;
+import com.mycompany.app.interfaces.ISeatDAO;
+import com.mycompany.app.utils.Model;
+import com.mycompany.app.utils.customLinkedList.Node;
 
 public class SeatDAO implements ISeatDAO {
 
@@ -30,7 +31,7 @@ public class SeatDAO implements ISeatDAO {
     }
 
     @Override
-    public Seat asignSeat(Flight flight)throws FlightException {
+    public Seat asignSeat(Flight flight)throws FlightException{
         Flight flightFound = model.findFlight(flight);
 
         if(flightFound == null){

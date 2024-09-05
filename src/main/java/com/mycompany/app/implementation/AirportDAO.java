@@ -1,15 +1,12 @@
-package implementation;
+package com.mycompany.app.implementation;
 
-import airport.Airplane;
-import airport.Airport;
-import airport.City;
-import airport.Flight;
-import exception.AirportException;
-import interfaces.IAirportDAO;
-import utils.Model;
 
 import java.util.Collection;
 import java.util.List;
+
+import com.mycompany.app.airport.Airport;
+import com.mycompany.app.interfaces.IAirportDAO;
+import com.mycompany.app.utils.Model;
 
 public class AirportDAO implements IAirportDAO {
 

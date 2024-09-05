@@ -1,10 +1,10 @@
-package people;
-
-import airport.Airplane;
-import interfaces.IPassenger;
+package com.mycompany.app.people;
 
 import java.util.Date;
 import java.util.Objects;
+
+import com.mycompany.app.airport.Airplane;
+import com.mycompany.app.interfaces.IPassenger;
 
 public class Pilot extends AirplaneCrew implements IPassenger {
 

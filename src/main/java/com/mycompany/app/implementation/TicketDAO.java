@@ -1,17 +1,16 @@
-package implementation;
-
-import airport.Flight;
-import airport.Seat;
-import airport.Ticket;
-import exception.FlightException;
-import exception.TicketException;
-import interfaces.IFlightDAO;
-import interfaces.ITicketDAO;
-import people.Passenger;
-import utils.Model;
+package com.mycompany.app.implementation;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import com.mycompany.app.airport.Flight;
+import com.mycompany.app.airport.Seat;
+import com.mycompany.app.airport.Ticket;
+import com.mycompany.app.exception.FlightException;
+import com.mycompany.app.exception.TicketException;
+import com.mycompany.app.interfaces.IFlightDAO;
+import com.mycompany.app.interfaces.ITicketDAO;
+import com.mycompany.app.utils.Model;
 
 public class TicketDAO implements ITicketDAO {
 

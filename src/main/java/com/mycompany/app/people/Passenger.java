@@ -1,12 +1,12 @@
-package people;
-
-import airport.Ticket;
-import exception.TicketException;
+package com.mycompany.app.people;
 
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 import java.util.Objects;
+
+import com.mycompany.app.airport.Ticket;
+import com.mycompany.app.exception.TicketException;
 
 public class Passenger extends Person {
 

@@ -1,14 +1,19 @@
-package utils;
+package com.mycompany.app.utils;
 
-import airport.*;
 //import org.apache.logging.log4j.LogManager;
 //import org.apache.logging.log4j.Logger;
-import people.Passenger;
-import utils.customLinkedList.CustomLinkedList;
 
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
+
+import com.mycompany.app.airport.Airplane;
+import com.mycompany.app.airport.Airport;
+import com.mycompany.app.airport.City;
+import com.mycompany.app.airport.Flight;
+import com.mycompany.app.airport.Seat;
+import com.mycompany.app.people.Passenger;
+import com.mycompany.app.utils.customLinkedList.CustomLinkedList;
 
 public class Model {
     Passenger passenger;

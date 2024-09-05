@@ -1,9 +1,8 @@
-package implementation;
+package com.mycompany.app.implementation;
 
-import interfaces.IPassenger;
-import interfaces.IPassengerDAO;
-import people.Passenger;
-import utils.Model;
+import com.mycompany.app.interfaces.IPassengerDAO;
+import com.mycompany.app.people.Passenger;
+import com.mycompany.app.utils.Model;
 
 public class PassengerDAO implements IPassengerDAO {
     private static Model model;

@@ -1,4 +1,4 @@
-package people;
+package com.mycompany.app.people;
 
 import java.util.Date;
 import java.util.Objects;

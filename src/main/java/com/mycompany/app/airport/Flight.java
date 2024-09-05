@@ -1,4 +1,4 @@
-package airport;
+package com.mycompany.app.airport;
 
 import java.util.Date;
 import java.util.Objects;

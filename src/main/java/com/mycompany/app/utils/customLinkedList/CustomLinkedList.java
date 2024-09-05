@@ -1,4 +1,4 @@
-package utils.customLinkedList;
+package com.mycompany.app.utils.customLinkedList;
 
 public class CustomLinkedList <T>{
     private Node<T> head;

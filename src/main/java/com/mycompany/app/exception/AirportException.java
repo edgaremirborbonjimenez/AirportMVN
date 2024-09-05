@@ -1,4 +1,4 @@
-package exception;
+package com.mycompany.app.exception;
 
 public class AirportException extends RuntimeException {
     public AirportException() {

@@ -1,6 +1,6 @@
-package interfaces;
+package com.mycompany.app.interfaces;
 
-import airport.Airplane;
+import com.mycompany.app.airport.Airplane;
 
 public interface IAriplaneDAO {
     public Airplane addAirplane(Airplane airplane);

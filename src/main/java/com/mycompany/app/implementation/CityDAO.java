@@ -1,13 +1,14 @@
-package implementation;
+package com.mycompany.app.implementation;
 
-import airport.City;
-import exception.AirportException;
-import interfaces.ICityDAO;
 //import org.apache.logging.log4j.LogManager;
 //import org.apache.logging.log4j.Logger;
-import utils.Model;
 
 import java.util.List;
+
+import com.mycompany.app.airport.City;
+import com.mycompany.app.exception.AirportException;
+import com.mycompany.app.interfaces.ICityDAO;
+import com.mycompany.app.utils.Model;
 
 public class CityDAO implements ICityDAO {
 

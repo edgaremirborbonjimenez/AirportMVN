@@ -1,12 +1,14 @@
-package airport;
+package com.mycompany.app.airport;
 
-import people.Passenger;
-import people.Pilot;
-import people.Stewardess;
-import utils.customLinkedList.CustomLinkedList;
-import utils.customLinkedList.Node;
+
 
 import java.util.*;
+
+import com.mycompany.app.people.Passenger;
+import com.mycompany.app.people.Pilot;
+import com.mycompany.app.people.Stewardess;
+import com.mycompany.app.utils.customLinkedList.CustomLinkedList;
+import com.mycompany.app.utils.customLinkedList.Node;
 
 public class Airplane {
     private String id;

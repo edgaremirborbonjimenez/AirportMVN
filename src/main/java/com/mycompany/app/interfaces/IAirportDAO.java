@@ -1,13 +1,10 @@
-package interfaces;
+package com.mycompany.app.interfaces;
 
-import airport.Airplane;
-import airport.Airport;
-import airport.City;
-import airport.Flight;
-import exception.AirportException;
 
 import java.util.Collection;
 import java.util.List;
+
+import com.mycompany.app.airport.Airport;
 
 public interface IAirportDAO {
 

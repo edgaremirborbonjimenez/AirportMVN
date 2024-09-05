@@ -1,8 +1,8 @@
-package people;
-
-import airport.Airplane;
+package com.mycompany.app.people;
 
 import java.util.Date;
+
+import com.mycompany.app.airport.Airplane;
 
 public abstract class AirplaneCrew extends Person {
     protected Date dateStartedWorking;

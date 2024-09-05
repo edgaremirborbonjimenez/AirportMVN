@@ -1,5 +1,5 @@
 package com.mycompany.app;
-import presentation.Menu;
+import com.mycompany.app.presentation.Menu;
 
 public class Main {
     public static void main(String[] args) {
@@ -7,7 +7,7 @@ public class Main {
             Menu menu = new Menu();
             menu.displayMenu();
         }catch(Exception e) {
-            System.out.println(e.getMessage());
+            System.out.println("Error: "+e.getMessage());
         }
     }
 }
