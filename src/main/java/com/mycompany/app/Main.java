@@ -6,8 +6,8 @@ public class Main {
         try {
             Menu menu = new Menu();
             menu.displayMenu();
-        }catch(Exception e) {
-            System.out.println("Error: "+e.getMessage());
+        } catch (Exception e) {
+            System.out.println("Error: " + e.getMessage());
         }
     }
 }

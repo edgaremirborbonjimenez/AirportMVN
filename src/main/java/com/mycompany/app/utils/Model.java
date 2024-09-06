@@ -31,43 +31,43 @@ public class Model {
         return passenger;
     }
 
-    public static Model getInstance(){
-        if(model==null){
+    public static Model getInstance() {
+        if (model == null) {
             model = new Model();
         }
         return model;
     }
 
-    public List<Flight> getFlights(){
+    public List<Flight> getFlights() {
         return airport.getAllFlights();
     }
 
-    public Flight findFlight(Flight flight){
-        for(Flight f:airport.getAllFlights()){
-            if(f.equals(flight)){
+    public Flight findFlight(Flight flight) {
+        for (Flight f:airport.getAllFlights()) {
+            if (f.equals(flight)) {
                 return f;
             }
         }
         return null;
     }
 
-    public Airport getAirport(){
+    public Airport getAirport() {
         return airport;
     }
 
-    public void setAirport(Airport airport){
+    public void setAirport(Airport airport) {
         this.airport = airport;
     }
 
-    public List<City> getCities(){
+    public List<City> getCities() {
         return cities;
     }
 
-    public void setCities(List<City> cities){
+    public void setCities(List<City> cities) {
         this.cities = cities;
     }
 
-    private void startData(){
+    private void startData() {
         cities = new ArrayList<>();
         airport = new Airport();
         passenger = new Passenger();
@@ -115,7 +115,7 @@ public class Model {
         flight6.setGoingTo(city6);
         flight6.setPrice(40.99);
         CustomLinkedList<Seat> seats = new CustomLinkedList<>();
-        for(int i =0; i<10;i++){
+        for (int i = 0; i < 10;i++) {
             Seat s = new Seat();
             s.setNumber(i);
             s.setSpecial(false);

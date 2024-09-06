@@ -1,6 +1,6 @@
 package com.mycompany.app.utils.customLinkedList;
 
-public class Node <T>{
+public class Node <T> {
     private T data;
     private Node<T> next;
 

@@ -14,7 +14,7 @@ public class Passenger extends Person {
     private Collection<Ticket> ticket;
     private double money;
 
-    public Passenger(){
+    public Passenger() {
         ticket = new ArrayList();
     }
 
@@ -39,14 +39,14 @@ public class Passenger extends Person {
     }
 
     public double buyTicket(double price)throws TicketException {
-        if(money<=price){
+        if (money <= price) {
             throw new TicketException("Passenget doesn´t have enough money");
         }
         money -= price;
         return money;
     }
 
-    public Ticket addTicket(Ticket ticket){
+    public Ticket addTicket(Ticket ticket) {
          this.ticket.add(ticket);
          return ticket;
     }

@@ -62,19 +62,19 @@ public class Airplane {
         this.pilots = pilots;
     }
 
-    public Seat asignSeat(Passenger passenger, int number){
-        if (seats.getHead()==null){
+    public Seat asignSeat(Passenger passenger, int number) {
+        if (seats.getHead() == null) {
             return null;
         }
         Node<Seat> seat = seats.getHead();
-        do{
-            if(seat.getData().getNumber()==number){
+        do {
+            if (seat.getData().getNumber() == number) {
                 seat.getData().setPassenger(passenger);
                 return seat.getData();
-            }else{
+            } else {
                 seat = seat.getNext();
             }
-        }while (seat.getNext() != null);
+        } while (seat.getNext() != null);
             return null;
     }
 

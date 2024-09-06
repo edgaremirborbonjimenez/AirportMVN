@@ -24,17 +24,17 @@ public class FlightDAO implements IFlightDAO {
         model = Model.getInstance();
     }
 
-    public static IFlightDAO getInstance(){
-        if(flightDAO == null){
+    public static IFlightDAO getInstance() {
+        if (flightDAO == null) {
             flightDAO = new FlightDAO();
         }
         return flightDAO;
     }
 
     @Override
-    public List<List<Flight>> getRoute(City leaving, City goingTo) throws FlightException{
+    public List<List<Flight>> getRoute(City leaving, City goingTo) throws FlightException {
         Airport airport = model.getAirport();
-        if(airport == null){
+        if (airport == null) {
             //logger.error("There is No Airport Available");
             throw new FlightException("There is No Airport Available");
         }

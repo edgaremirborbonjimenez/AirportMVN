@@ -15,12 +15,12 @@ public class AirportDAO implements IAirportDAO {
     private static final int count = 4;
     private static Model model;
 
-        private AirportDAO(){
+        private AirportDAO() {
             model = Model.getInstance();
         }
 
-        public static IAirportDAO getInstance(){
-            if(airportDAO==null){
+        public static IAirportDAO getInstance() {
+            if (airportDAO == null) {
                 airportDAO = new AirportDAO();
             }
             return airportDAO;
@@ -28,7 +28,7 @@ public class AirportDAO implements IAirportDAO {
 
 
     @Override
-    public void setAirport(Airport airport){
+    public void setAirport(Airport airport) {
             model.setAirport(airport);
     }
 

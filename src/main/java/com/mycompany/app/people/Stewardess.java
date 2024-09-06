@@ -13,14 +13,16 @@ public class Stewardess extends AirplaneCrew implements IPassenger {
     Collection<String> personalStrengths;
 
 
-    public Stewardess(){}
+    public Stewardess() {
+        
+    }
 
     @Override
     public void anounceMessage() {
         System.out.println("There is any help you need?");
     }
 
-    public Stewardess(String firstName, String lastName, Date birthDate, Date dateStartedWorking,Collection<String> personalStrengths, Airplane airplane){
+    public Stewardess(String firstName, String lastName, Date birthDate, Date dateStartedWorking,Collection<String> personalStrengths, Airplane airplane) {
         super(firstName, lastName, birthDate, dateStartedWorking,airplane);
         this.personalStrengths = personalStrengths;
     }

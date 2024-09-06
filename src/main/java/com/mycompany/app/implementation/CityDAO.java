@@ -35,7 +35,7 @@ public class CityDAO implements ICityDAO {
     public List<City> getCities() throws Exception {
         List<City> cities = model.getCities();
 
-        if(cities==null||cities.size()==0){
+        if (cities == null || cities.size() == 0) {
             //logger.error("There is No City Available");
             throw new AirportException("There is No City Available");
         }

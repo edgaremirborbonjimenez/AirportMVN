@@ -19,37 +19,37 @@ public class SeatDAO implements ISeatDAO {
     private static ISeatDAO seatDAO;
 
 
-    private SeatDAO(){
+    private SeatDAO() {
         model = Model.getInstance();
     }
 
-    public static ISeatDAO getInstance(){
-        if(seatDAO == null){
+    public static ISeatDAO getInstance() {
+        if (seatDAO == null) {
             seatDAO = new SeatDAO();
         }
         return seatDAO;
     }
 
     @Override
-    public Seat asignSeat(Flight flight)throws FlightException{
+    public Seat asignSeat(Flight flight)throws FlightException {
         Flight flightFound = model.findFlight(flight);
 
-        if(flightFound == null){
+        if (flightFound == null) {
             //logger.error("Flight not found");
             throw new FlightException("Flight not found");
         }
         Node<Seat> node = flight.getAirplane().getSeats().getHead();
-        if(node.getData() == null){
+        if (node.getData() == null) {
             //logger.error("No seats available");
             throw new FlightException("No seats available");
         }
-        do{
-            if(node.getData().getPassenger()==null){
+        do {
+            if (node.getData().getPassenger() == null) {
                 node.getData().setPassenger(model.getPassenger());
                 return node.getData();
             }
             node = node.getNext();
-        }while(node.getNext() != null);
+        } while (node.getNext() != null);
         //logger.error("No seats available");
         throw new FlightException("No seats available");
     }
