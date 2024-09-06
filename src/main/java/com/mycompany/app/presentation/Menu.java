@@ -74,11 +74,9 @@ public class Menu {
                     scanner.close();
                     return;
                 } else {
-                    //  logger.error("Please select a valid option in Main Menu");
                     System.out.println("Please select a valid option");
                 }            
             } else {
-                //  logger.error("Please select a valid option in Main Menu");
                 System.out.println("Please select a valid option");
                 System.out.println();
             }
@@ -98,6 +96,7 @@ public class Menu {
 
                 if (!scanner.hasNextInt()) {
                     scanner.next();
+                    logger.error("Please select a valid option in Main Menu");
                     System.out.println("Please select a valid option for Leaving");
                     System.out.println();
                     continue;
